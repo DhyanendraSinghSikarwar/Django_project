@@ -1,0 +1,43 @@
+
+
+# my_tennis_club
+
+
+
+### Follow below instruction to install the depedencies.
+
+
+- Install Virtualenv
+ 
+  sudo apt-get install python3-pip
+  sudo pip3 install virtualenv 
+
+
+### Follow below setups to setup the application.
+
+- Create the virtual envoirments with python 3.8 version or above and activate.
+    virtualenv myworld
+    source myworld/bin/activate
+   
+  
+- Install python dependencies,run into the project root directory.
+  
+    pip install -r requirements.txt
+  
+
+- Migrate the db.
+    python manage.py makemigrations
+    python manage.py migrate
+    
+
+- Create admin user in django and runserver.
+  
+    python manage.py createsuperuser
+    python manage.py runserver
+    
+
+
+
+- Access the project python shell.
+  
+  python manage.py shell

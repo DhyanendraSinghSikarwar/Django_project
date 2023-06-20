@@ -1,0 +1,23 @@
+<table border = '1'>
+<tr>
+  <th>ID</th>
+  <th>Age</th>
+  <th>Email</th>
+  <th>Address</th>
+  <th>Member_id</th>
+</tr>
+
+{% for x in mymember %}
+  <tr>
+    <td>{{ x.id }}</td>
+    <td>{{ x.age }}</td>
+    <td>{{ x.email }}</td>
+    <td>{{ x.address }}</td>
+    <td>{{ x.member_id }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+
+<p>Back to <a href="/">Home</a></p>
